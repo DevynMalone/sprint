@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All AFCS</title>
+</head>
+<body>
+    <h1>LIST OF AFC: TEAMS, STANDINGS, RECORD, NEXT GAME</h1>
+    <% for( let i = 0; i < afcs.length; i++ ) { %>
+    <% let a = afcs[i]; %> 
+    <% a = a.toJSON() %> 
+    <p> <%= a.team%> </p>
+    <p> <%= a.standing%> </p>
+    <p> <%= a.record%> </p>
+    <p> <%= a.nextGame%> </p><br>
+    <% } %>
+</body>
+</html>
